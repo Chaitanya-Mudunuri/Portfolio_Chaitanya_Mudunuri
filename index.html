@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Mudunuri - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">CM</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#education" class="nav-link" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#publications" class="nav-link" data-section="publications">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Publications</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="typing-text">Chaitanya Mudunuri</span>
+                </h1>
+                <p class="hero-tagline">Aspiring AI & Data Science Engineer</p>
+                <p class="hero-description">
+                    Passionate about leveraging artificial intelligence and data science to solve real-world problems. 
+                    Experienced in machine learning, deep learning, and full-stack development with a focus on 
+                    innovative solutions and research-driven approaches.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="floating-icons">
+                        <i class="fab fa-python"></i>
+                        <i class="fas fa-brain"></i>
+                        <i class="fab fa-java"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Bachelor of Technology</h3>
+                                <span class="timeline-date">2021 - 2025</span>
+                            </div>
+                            <h4>Computer Science and Engineering</h4>
+                            <p class="institution">Engineering College</p>
+                            <div class="timeline-details">
+                                <p>Specialization in Artificial Intelligence and Machine Learning</p>
+                                <div class="achievements">
+                                    <span class="achievement-tag">AI/ML Focus</span>
+                                    <span class="achievement-tag">Data Structures</span>
+                                    <span class="achievement-tag">Algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Higher Secondary Education</h3>
+                                <span class="timeline-date">2019 - 2021</span>
+                            </div>
+                            <h4>Science Stream</h4>
+                            <p class="institution">Higher Secondary School</p>
+                            <div class="timeline-details">
+                                <p>Mathematics, Physics, Chemistry with Computer Science</p>
+                                <div class="achievements">
+                                    <span class="achievement-tag">Mathematics</span>
+                                    <span class="achievement-tag">Physics</span>
+                                    <span class="achievement-tag">Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-logo">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Software Development Intern</h3>
+                            <h4>Krify Software Technologies</h4>
+                            <span class="experience-duration">Summer 2024</span>
+                        </div>
+                    </div>
+                    <div class="experience-details">
+                        <ul>
+                            <li>Developed web applications using modern JavaScript frameworks</li>
+                            <li>Collaborated with cross-functional teams on client projects</li>
+                            <li>Implemented responsive UI/UX designs and optimized performance</li>
+                            <li>Gained hands-on experience in full-stack development</li>
+                            <li>Participated in code reviews and agile development processes</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dual Authenticator</h3>
+                        <p>Advanced security system combining facial recognition and hand gesture authentication for enhanced user verification.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>BookMyTicket</h3>
+                        <p>Complete movie ticket booking platform with integrated Razorpay payment gateway and real-time seat selection.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Razorpay API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Facial Recognition System</h3>
+                        <p>Deep learning model for accurate facial recognition with high precision in dense crowd environments.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>HydroGuardian</h3>
+                        <p>IoT-based water quality monitoring system with real-time data collection and automated alert mechanisms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">IoT Sensors</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML/CSS</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Science & AI</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>TensorFlow</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>PyTorch</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>OpenCV</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Scikit-learn</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level" data-level="70"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cog"></i>
+                            <span>REST APIs</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications & Research</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Dual Authenticator: A Novel Approach to Multi-Modal Security</h3>
+                        <p class="publication-authors">Chaitanya Mudunuri, et al.</p>
+                        <p class="publication-venue">International Conference on Computer Vision and Pattern Recognition</p>
+                        <p class="publication-description">
+                            Research paper exploring the integration of facial recognition and hand gesture authentication 
+                            for enhanced security systems with improved accuracy and user experience.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="pub-tag">Computer Vision</span>
+                            <span class="pub-tag">Security</span>
+                            <span class="pub-tag">Machine Learning</span>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-download"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-left"></i> Cite</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Facial Recognition in Dense Crowd Environments: Deep Learning Approaches</h3>
+                        <p class="publication-authors">Chaitanya Mudunuri, et al.</p>
+                        <p class="publication-venue">IEEE Transactions on Image Processing</p>
+                        <p class="publication-description">
+                            Advanced deep learning techniques for accurate facial recognition in challenging dense crowd 
+                            scenarios with improved detection rates and reduced false positives.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="pub-tag">Deep Learning</span>
+                            <span class="pub-tag">Facial Recognition</span>
+                            <span class="pub-tag">Computer Vision</span>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-download"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-left"></i> Cite</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3>HydroGuardian: IoT-Based Real-Time Water Quality Monitoring System</h3>
+                        <p class="publication-authors">Chaitanya Mudunuri, et al.</p>
+                        <p class="publication-venue">International Journal of Environmental Monitoring</p>
+                        <p class="publication-description">
+                            Comprehensive IoT solution for continuous water quality assessment using sensor networks 
+                            and machine learning algorithms for predictive analysis and automated alerts.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="pub-tag">IoT</span>
+                            <span class="pub-tag">Environmental Monitoring</span>
+                            <span class="pub-tag">Data Analytics</span>
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-download"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-left"></i> Cite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities, innovative projects, 
+                        or collaborations in AI and data science. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:chaitanya.mudunuri@example.com">chaitanya.mudunuri@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="mailto:chaitanya.mudunuri@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/chaitanyamudunuri" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/chaitanyamudunuri" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/chaitanyamudunuri" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Chaitanya Mudunuri. All rights reserved.</p>
+                <p>Built with HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
