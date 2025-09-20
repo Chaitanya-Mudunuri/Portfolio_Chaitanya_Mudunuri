@@ -482,13 +482,53 @@ function initSectionReveal() {
 
 // Initialize section reveal
 initSectionReveal();
+// Publications: PDF download & Cite copy
+function initPublications() {
+    const pdfButtons = document.querySelectorAll('.pdf-btn');
+    const citeButtons = document.querySelectorAll('.cite-btn');
+
+    // PDF Download
+    pdfButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const pdfPath = btn.getAttribute('data-pdf');
+            if (pdfPath) {
+                const link = document.createElement('a');
+                link.href = pdfPath;
+                link.download = pdfPath.split('/').pop(); // auto file name
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        });
+    });
+
+    // Cite Copy
+    citeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const citation = btn.getAttribute('data-cite');
+            if (citation) {
+                navigator.clipboard.writeText(citation).then(() => {
+                    btn.innerHTML = '<i class="fas fa-check"></i> Copied';
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fas fa-quote-left"></i> Cite';
+                    }, 2000);
+                });
+            }
+        });
+    });
+}
+
+// Initialize Publications
+document.addEventListener('DOMContentLoaded', initPublications);
 
 // Console message for developers
 console.log(`
 🚀 Portfolio Website by Chaitanya Mudunuri
-📧 Contact: chaitanya.mudunuri@example.com
-💼 LinkedIn: linkedin.com/in/chaitanyamudunuri
-🔗 GitHub: github.com/chaitanyamudunuri
+📧 Contact: satyaramaraju1234@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/chaitanya-mudunuri-3494a6250/
+🔗 GitHub: https://github.com/Chaitanya-Mudunuri
 
 Built with HTML, CSS, and Vanilla JavaScript
 `);
