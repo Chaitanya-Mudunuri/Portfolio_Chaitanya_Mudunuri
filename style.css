@@ -9,12 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding-top: 60px; /* adjust so nav doesn't cover content */
-    }
-}
-
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -23,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -154,17 +148,6 @@ body {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
-@media (max-width: 480px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-    }
-}
-
 
 .hero-content {
     display: grid;
@@ -431,8 +414,7 @@ body {
 }
 
 .timeline-item:nth-child(even) {
-    left: 0;
-    text-align: right;
+    left: 50%;
 }
 
 .timeline-marker {
@@ -519,22 +501,10 @@ body {
 }
 
 /* Experience Styles */
-@media (max-width: 768px) {
-    .experience-card {
-        padding: 1.5rem;
-    }
-
-    .experience-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .tech-stack {
-        justify-content: flex-start;
-    }
+.experience-grid {
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 
 .experience-card {
     background: white;
@@ -604,7 +574,7 @@ body {
 }
 
 .experience-details li::before {
-    content: '▸';
+    content: 'â–¸';
     position: absolute;
     left: 0;
     color: #3b82f6;
@@ -809,23 +779,6 @@ body {
 .skill-level[data-level="70"]::before { width: 70%; }
 
 /* Publications Grid */
-@media (max-width: 768px) {
-    .publication-card {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .publication-icon {
-        margin-bottom: 1rem;
-    }
-
-    .publication-links {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
 .publications-grid {
     display: grid;
     gap: 2rem;
@@ -1274,10 +1227,6 @@ body {
     transform: translateX(0);
 }
 
-.cite-btn.copied {
-    color: #10b981; /* green for success */
-}
-
 /* Scroll Progress Indicator */
 .scroll-progress {
     position: fixed;
@@ -1294,4 +1243,8 @@ body {
     background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
     width: 0%;
     transition: width 0.3s ease;
+}
+
+.cite-btn.copied {
+    color: #10b981; /* green for success */
 }
