@@ -16,8 +16,9 @@ body {
     overflow-x: hidden;
 }
 
+/* Keep content centered and limited */
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -131,6 +132,7 @@ body {
     position: relative;
     overflow: hidden;
     padding: 6rem 2rem 2rem;
+    width: 100%;
 }
 
 .hero::before {
@@ -356,10 +358,12 @@ body {
 .section {
     padding: 6rem 0;
     position: relative;
+    width: 100%;
 }
 
 .section-alt {
     background: #f8fafc;
+    width: 100%;
 }
 
 .section-title {
