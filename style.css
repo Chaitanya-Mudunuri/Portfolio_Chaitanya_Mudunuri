@@ -431,7 +431,8 @@ body {
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    left: 0;
+    text-align: right;
 }
 
 .timeline-marker {
