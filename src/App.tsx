@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
 import { portfolioData } from './data/portfolioData';
 
 export function App() {
@@ -7,27 +8,8 @@ export function App() {
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] selection:bg-sky-500 selection:text-white">
       <Navbar />
 
-      <main className="pt-28">
-        <section id="hero" className="min-h-[85vh] flex flex-col items-center justify-center text-center px-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-mono mb-6">
-            <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-            {portfolioData.profile.affiliation} • AI & Data Science
-          </div>
-          <h1 className="text-4xl md:text-7xl font-syne font-extrabold tracking-tight max-w-4xl mb-6">
-            {portfolioData.profile.name}
-          </h1>
-          <p className="text-lg md:text-xl text-[var(--text-secondary)] max-w-2xl mb-8 font-light">
-            {portfolioData.profile.role} specializing in computer vision, deep learning, and robust IoT architectures.
-          </p>
-          <div className="flex gap-4">
-            <a href="#projects" className="px-6 py-3 rounded-full bg-sky-500 text-white font-medium hover:bg-sky-600 transition-all shadow-lg shadow-sky-500/20">
-              Explore Projects
-            </a>
-            <a href="#contact" className="px-6 py-3 rounded-full border border-[var(--border-color)] hover:border-sky-500/50 transition-all font-medium">
-              Get in Touch
-            </a>
-          </div>
-        </section>
+      <main className="pt-20">
+        <Hero />
 
         <section id="about" className="py-24 px-4 max-w-5xl mx-auto">
           <h2 className="text-3xl font-syne font-bold mb-8">About Me</h2>
